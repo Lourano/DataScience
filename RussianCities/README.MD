@@ -5,7 +5,7 @@ Find more accurate average values of the population of Russian cities.
 
 ![input-onlinepngtools](https://user-images.githubusercontent.com/47052805/56085883-17bc7000-5e54-11e9-98f0-af13ce53113e.jpg)
 
-To do this, it was decided to create a new Data Set in which the two largest cities are missing: Moscow, St. Petersburg, as they can greatly influence the data, for example: the difference between St. Petersburg and Nizhny Novgorod is slightly more than two thousands of population measurements.
+To do this, it was decided to create a new Data Set in which two largest cities are missing: Moscow, St. Petersburg, as they can greatly influence analysis. For example: the difference between St. Petersburg and Nizhny Novgorod is slightly more than two thousands of population measurements.
  
 ![input-onlinepngtools-2](https://user-images.githubusercontent.com/47052805/56085882-155a1600-5e54-11e9-8920-45063b4eaaa2.jpg)
 
