@@ -23,6 +23,6 @@ All observations described in .py file
 
 ![input-onlinepngtools-4](https://user-images.githubusercontent.com/47052805/56081001-e40c2680-5e10-11e9-85af-93f8c4cc3e25.png)
 
-6. 5 observation will look better at box-plot graph rather than on histogram.
+6. 5 observation looks better at box-plot graph rather than on histogram.
 
 ![input-onlinepngtools-5](https://user-images.githubusercontent.com/47052805/56081003-e79fad80-5e10-11e9-821f-28344a31d6c8.png)
