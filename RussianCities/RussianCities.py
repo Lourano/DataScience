@@ -10,12 +10,6 @@ print(dataSet)
 
 print(dataSet.describe())
 
-dataSet[u'население'].hist()
-
-graphs.show()
-
-
-
 y = dataSet[u'население']
 
 graphs.plot(y, 'r')
@@ -25,10 +19,6 @@ graphs.show()
 newDataSet = dataSet.iloc[2 : 1004, :]
 
 print(newDataSet.describe())
-
-newDataSet[u'население'].hist()
-
-graphs.show()
 
 yNew = newDataSet[u'население']
 
@@ -43,12 +33,6 @@ print("Error with Object Moscow: ",errorForDataWithMoscow)
 errorForDataWithoutMoscow = len(dataSet[dataSet['население'] < 44.997904])/ len(dataSet) * 100
 
 print("Error without Object Moscow: ",errorForDataWithoutMoscow)
-
-logOfVector = numerical.log10(dataSet[u'население'])
-
-matrix.Series(logOfVector).hist(bins = 45)
-
-graphs.show()
 
 medianValueWithoutMoscow = newDataSet.median()
 
