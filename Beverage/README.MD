@@ -1,4 +1,4 @@
-This Data Set contains data from a social survey. "What kind of sweet beverages people drank for two weeks". 
+This Data Set contains data from a social survey. "What kind of sweet beverages people have been drinking for two weeks". 
 [34 rows x 8 columns].
 
 Formulation of the problem: Do a cluster analysis, split the Data Set into possible classes. For analyzing will be used Dendrogram and ulnar diagram(Elbow Method).
