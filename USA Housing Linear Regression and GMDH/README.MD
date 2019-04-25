@@ -30,3 +30,8 @@ It was Considered a more in-depth method of Linear Regression, GMDH, and also a 
 
 
 ![image](https://user-images.githubusercontent.com/47052805/56770032-9fdb3780-67bb-11e9-981b-de20544f5d3e.png)
+
+
+Python Library for GMDH:
+
+https://libraries.io/pypi/GmdhPy
