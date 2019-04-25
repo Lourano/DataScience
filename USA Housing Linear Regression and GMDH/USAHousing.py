@@ -34,6 +34,10 @@ print(USAHousing.columns)
 
 graphs.heatmap(USAHousing.corr(),annot = True)
 
+figures.title('Correlation')
+
+figures.savefig('corr.png')
+
 figures.show()
 
 figures.figure(figsize = (20, 12))
@@ -49,6 +53,10 @@ figures.scatter(USAHousing['Avg. Area Number of Bedrooms'], USAHousing['Price'])
 figures.show()
 
 graphs.pairplot(USAHousing)
+
+figures.title('Visualization')
+
+figures.savefig('vis.png')
 
 figures.show()
 
@@ -84,6 +92,10 @@ predictionByLinearRegression = linearModel.predict(testDataX)
 
 figures.scatter(testDataY, predictionByLinearRegression)
 
+figures.title('Linear Model')
+
+figures.savefig('linear.png')
+
 figures.show()
 
 print('MAE by Linear Regression: ', metrics.mean_absolute_error(testDataY, predictionByLinearRegression))
@@ -92,19 +104,19 @@ print('MSE by Linear Regression: ', metrics.mean_squared_error(testDataY, predic
 
 print('RMSE by Linear Regression: ', numerical.sqrt(metrics.mean_squared_error(testDataY, predictionByLinearRegression)))
 
-X2 = statistic.add_constant(trainDataX)
+variableForStatisticX = statistic.add_constant(trainDataX)
 
-print(X2.head())
+print(variableForStatisticX.head())
 
-est=statistic.OLS(trainDataY, X2)
+variableForEST = statistic.OLS(trainDataY, variableForStatisticX)
 
-est2=est.fit()
+variableForESTVisualization = variableForEST.fit()
 
-print(est2.summary())
+print(variableForESTVisualization.summary())
 
-vifs=[vif(X2.values,i) for i in range(len(X2.columns))]
+VIFS = [vif(variableForStatisticX.values, i) for i in range(len(variableForStatisticX.columns))]
 
-matrix.Series(data = vifs, index = X2.columns)
+matrix.Series(data = VIFS, index = variableForStatisticX.columns)
 
 ############ PART 2. GMDH FOR REGRESSION ANALYSIS ############
 
@@ -115,6 +127,10 @@ GMDHModel = GMDH.fit(trainDataX, trainDataY)
 predictionByGMDH = GMDH.predict(testDataX)
 
 figures.scatter(testDataY, predictionByGMDH)
+
+figures.title('GMDH Model')
+
+figures.savefig('GMDH.png')
 
 figures.show()
 
@@ -127,6 +143,18 @@ print('RMSE by GMDH: ', numerical.sqrt(metrics.mean_squared_error(testDataY, pre
 RSquaredForGMDBMethod = metrics.r2_score(testDataY, predictionByGMDH)
 
 print('R^2 By GMDH: ', RSquaredForGMDBMethod)
+
+figures.scatter(testDataY, predictionByLinearRegression, color = 'red', label = 'Regression Model')
+
+figures.scatter(testDataY, predictionByGMDH, color = 'blue', alpha = 0.3, label = 'GDMH Model')
+
+figures.legend()
+
+figures.title('Comparison of Models')
+
+figures.savefig('comp.png')
+
+figures.show()
 
 
 
