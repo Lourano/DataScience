@@ -21,7 +21,7 @@ The input parameters are bill parameters: length, width, etc. At the output laye
 
 ![myplot2](https://user-images.githubusercontent.com/47052805/58955870-ad65e300-87a5-11e9-9fb8-7163d28a963e.png)
 
-3.  Fist train. Activation function = sigmoid, in 3 layers. Accuracy = 51.13%
+3.  First train. Activation function = sigmoid, in 3 layers. Accuracy = 51.13%
 
 ![firsttrain](https://user-images.githubusercontent.com/47052805/58956885-249c7680-87a8-11e9-8b67-fa755368bcf6.png)
 
