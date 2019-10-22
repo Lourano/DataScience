@@ -28,3 +28,9 @@ The main task of this method is to get some informational content of factors.
 In this example, I used USA Housing dataset.
 
 
+
+
+
+
+
+
